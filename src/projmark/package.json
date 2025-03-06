@@ -1,0 +1,25 @@
+{
+  "name": "projmark",
+  "displayName": "ProjMark",
+  "description": "ProjMark language support",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "pmk",
+      "aliases": ["ProjMark", "pmk"],
+      "extensions": [".pmk"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "pmk",
+      "scopeName": "source.pmk",
+      "path": "./syntaxes/pmk.tmLanguage.json"
+    }]
+  }
+}
