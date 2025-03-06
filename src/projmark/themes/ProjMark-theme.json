@@ -1,0 +1,116 @@
+{
+  "name": "ProjMark Theme",
+  "type": "dark",
+  "colors": {
+    "editor.foreground": "#FFFFFF", 
+    "editor.background": "#1E1E1E", 
+    "editor.lineHighlightBackground": "#2D2D2D"
+  },
+  "tokenColors": [
+    {
+      "scope": "entity.name.section.project.pmk",
+      "settings": {
+        "foreground": "#569CD6",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "entity.name.section.subproject.pmk",
+      "settings": {
+        "foreground": "#4EC9B0",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "entity.name.section.subsubproject.pmk",
+      "settings": {
+        "foreground": "#DCDCAA",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "entity.name.section.milestone.pmk",
+      "settings": {
+        "foreground": "#D7BA7D"
+      }
+    },
+    {
+      "scope": "constant.numeric.date.pmk",
+      "settings": {
+        "foreground": "#B5CEA8"
+      }
+    },
+    {
+      "scope": "keyword.control.status.in-progress.pmk",
+      "settings": {
+        "foreground": "#D7BA7D"
+      }
+    },
+    {
+      "scope": "keyword.control.status.completed.pmk",
+      "settings": {
+        "foreground": "#6A9955"
+      }
+    },
+    {
+      "scope": "keyword.control.status.on-hold.pmk",
+      "settings": {
+        "foreground": "#CE9178"
+      }
+    },
+    {
+      "scope": "keyword.control.status.not-started.pmk",
+      "settings": {
+        "foreground": "#9CDCFE"
+      }
+    },
+    {
+      "scope": "keyword.control.priority.high.pmk",
+      "settings": {
+        "foreground": "#C586C0"
+      }
+    },
+    {
+      "scope": "keyword.control.priority.medium.pmk",
+      "settings": {
+        "foreground": "#DCDCAA"
+      }
+    },
+    {
+      "scope": "keyword.control.priority.low.pmk",
+      "settings": {
+        "foreground": "#6A9955"
+      }
+    },
+    {
+      "scope": "entity.name.tag.pmk",
+      "settings": {
+        "foreground": "#CE9178"
+      }
+    },
+    {
+      "scope": "markup.underline.link.pmk",
+      "settings": {
+        "foreground": "#6A9955"
+      }
+    },
+    {
+      "scope": "comment.line.pmk",
+      "settings": {
+        "foreground": "#6A9955"
+      }
+    },
+    {
+      "scope": "string.quoted.description.pmk",
+      "settings": {
+        "foreground": "#9CDCFE"
+      }
+    },
+    {
+      "scope": "string.quoted.dependency.pmk",
+      "settings": {
+        "foreground": "#a2b3d5"
+      }
+    }
+  ]
+}

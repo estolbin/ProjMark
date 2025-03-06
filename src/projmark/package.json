@@ -20,6 +20,14 @@
       "language": "pmk",
       "scopeName": "source.pmk",
       "path": "./syntaxes/pmk.tmLanguage.json"
-    }]
+    }],
+    "themes": [
+      {
+        "label": "ProjMark Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/ProjMark-theme.json"
+      }
+    ]
+
   }
 }

@@ -1,32 +1,87 @@
 {
-	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"scopeName": "source.pmk",
 	"name": "ProjMark",
 	"patterns": [
 		{
-			"include": "#keywords"
+		"match": "^\\s*(#)\\s+(.*)",
+		"captures": {
+			"1": { "name": "punctuation.definition.project.pmk" },
+			"2": { "name": "entity.name.section.project.pmk" }
+		}
 		},
 		{
-			"include": "#strings"
+		"match": "^\\s*(##)\\s+(.*)",
+		"captures": {
+			"1": { "name": "punctuation.definition.subproject.pmk" },
+			"2": { "name": "entity.name.section.subproject.pmk" }
+		}
+		},
+		{
+		"match": "^\\s*(###)\\s+(.*)",
+		"captures": {
+			"1": { "name": "punctuation.definition.subsubproject.pmk" },
+			"2": { "name": "entity.name.section.subsubproject.pmk" }
+		}
+		},
+		{
+		"match": "^\\s*(-)\\s+(.*)",
+		"captures": {
+			"1": { "name": "punctuation.definition.milestone.pmk" },
+			"2": { "name": "entity.name.section.milestone.pmk" }
+		}
+		},
+		{
+			"match": "@ [^\\s]+",
+			"name": "constant.numeric.date.pmk"
+		},
+		{
+			"match": "!в процессе",
+			"name": "keyword.control.status.in-progress.pmk"
+		},
+		{
+			"match": "!завершено",
+			"name": "keyword.control.status.completed.pmk"
+		},
+		{
+			"match": "!отложено",
+			"name": "keyword.control.status.on-hold.pmk"
+		},		
+		{
+			"match": "!не начато",
+			"name": "keyword.control.status.not-started.pmk"
+		},		
+		{
+			"match": "%высокий",
+			"name": "keyword.control.priority.high.pmk"
+		},
+		{
+			"match": "%средний",
+			"name": "keyword.control.priority.medium.pmk"
+		},
+		{
+			"match": "%низкий",
+			"name": "keyword.control.priority.low.pmk"
+		},		
+		{
+		"match": "~([\\w-]+)",
+		"name": "entity.name.tag.pmk"
+		},
+		{
+		"match": "=>.*",
+		"name": "markup.underline.link.pmk"
+		},
+		{
+		"match": "//.*",
+		"name": "comment.line.pmk"
+		},
+		{
+		"match": ">.*",
+		"name": "string.quoted.description.pmk"
+		},
+		{
+			"match": "->.*",
+			"name": "string.quoted.dependency.pmk"
 		}
 	],
-	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.pmk",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
-		"strings": {
-			"name": "string.quoted.double.pmk",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.pmk",
-					"match": "\\\\."
-				}
-			]
-		}
-	},
-	"scopeName": "source.pmk"
+	"repository": {}
 }
